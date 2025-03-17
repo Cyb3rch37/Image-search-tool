@@ -20,6 +20,18 @@ RUN apt-get update && apt-get install -y \
 # Install pybind11
 RUN pip install pybind11
 
+# Install face_recognition
+RUN pip install face_recognition
+
+# Install bs4
+RUN pip install beautifulsoup
+
+#Install cv2
+RUN pip install opencv-python
+
+#Install requests
+RUN pip install requests
+
 # Copy the requirements file
 COPY requirements.txt /app/
 

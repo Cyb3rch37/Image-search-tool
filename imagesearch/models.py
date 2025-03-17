@@ -9,3 +9,5 @@ class SearchReport(models.Model):
     
     def __str__(self):
         return f"{self.image_name} - {'Match' if self.match_found else 'No Match'}"
+
+
