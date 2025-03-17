@@ -17,25 +17,18 @@ RUN apt-get update && apt-get install -y \
     cmake \
     && apt-get clean
 
-# Install pybind11
-RUN pip install pybind11
-
-# Install face_recognition
-RUN pip install face_recognition
-
-# Install bs4
-RUN pip install beautifulsoup
-
-#Install cv2
-RUN pip install opencv-python
-
-#Install requests
-RUN pip install requests
+# Install dependencies
+RUN pip install \
+    pybind11 \
+    face_recognition \
+    beautifulsoup4 \
+    opencv-python \
+    requests
 
 # Copy the requirements file
 COPY requirements.txt /app/
 
-# Install dependencies
+# Install dependencies from requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy the project files
