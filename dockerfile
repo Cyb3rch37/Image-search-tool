@@ -18,12 +18,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
 
 # Install dependencies
-RUN pip install \
-    pybind11 \
-    face_recognition \
-    beautifulsoup4 \
-    opencv-python \
-    requests
+RUN pip install pybind11
 
 # Copy the requirements file
 COPY requirements.txt /app/
