@@ -164,3 +164,25 @@ STATIC_ROOT = '/app/staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/app/media'
+
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+# Image Search Tool API
+IMAGE_SEARCH_TOOL_API_KEY = os.getenv("IMAGE_SEARCH_TOOL_API_KEY")
+
+# Social Media API Keys
+SOCIAL_MEDIA_API_KEYS = {
+    "facebook": os.getenv("FACEBOOK_API_KEY"),
+    "instagram": os.getenv("INSTAGRAM_API_KEY"),
+    "twitter": os.getenv("TWITTER_API_KEY"),
+    "pinterest": os.getenv("PINTEREST_API_KEY"),
+    "linkedin": os.getenv("LINKEDIN_API_KEY"),
+    "tumblr": os.getenv("TUMBLR_API_KEY"),
+    "tiktok": os.getenv("TICKTOCK_API_KEY"),
+}
+
+

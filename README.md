@@ -66,5 +66,18 @@ Install python-dotenv
 Build the docker image
   docker-compose up --build
 
+Steps to Build Your Image Search Tool API
+
+Set Up Django and Django REST Framework (DRF)
+  Install Django and Django REST Framework
+  pip install django djangorestframework pillow numpy opencv-python
+
+Create an API Endpoint for Image Search
+
+Implement Image Search Logic (Using Feature Matching or Hashing)
+
+Integrate External APIs (Optional)
+
+Deploy the API (Optional)
 
 
