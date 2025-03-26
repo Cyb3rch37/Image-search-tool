@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'livereload',
     'django.contrib.staticfiles',
 ]
 
@@ -48,7 +47,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'imagesearch.urls'
@@ -160,3 +158,9 @@ LOGGING = {
         },
     },
 }
+
+STATIC_URL = '/static/'
+STATIC_ROOT = '/app/staticfiles'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/app/media'

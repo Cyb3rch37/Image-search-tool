@@ -1,4 +1,4 @@
-version: '3.8'
+#version: '3.8'
 
 services:
   web:
@@ -32,3 +32,8 @@ services:
 
 volumes:
   postgres_data:
+  staticfiles:
+    driver: local
+  media:
+    driver: local
+

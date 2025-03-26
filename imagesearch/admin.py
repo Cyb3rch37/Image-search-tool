@@ -1,4 +1,4 @@
-## admin.py (Admin Dashboard Setup)
+## admin.py (Admin Dashboard Setup)t
 from django.contrib import admin
 from .models import SearchReport
 import csv
